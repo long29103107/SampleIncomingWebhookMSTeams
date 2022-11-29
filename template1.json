@@ -1,0 +1,167 @@
+{
+  "type": "message",
+  "attachments": [
+    {
+      "contentType": "application/vnd.microsoft.card.adaptive",
+      "content": {
+        "type": "AdaptiveCard",
+        "body": [
+          {
+            "type": "TextBlock",
+            "size": "Medium",
+            "weight": "Bolder",
+            "text": "Health Check for Critical Workflows"
+          },
+          {
+            "type": "TextBlock",
+            "text": "<at>Developer</at>, Foo Blaa",
+            "color": "attention",
+            "wrap": true
+          },
+          {
+            "type": "Table",
+            "gridStyle": "accent",
+            "firstRowAsHeaders": true,
+            "columns": [
+              {
+                "width": 1
+              },
+              {
+                "width": 1
+              },
+              {
+                "width": 1
+              }
+            ],
+            "rows": [
+              {
+                "type": "TableRow",
+                "cells": [
+                  {
+                    "type": "TableCell",
+                    "items": [
+                      {
+                        "type": "TextBlock",
+                        "text": "Name",
+                        "wrap": true,
+                        "weight": "Bolder"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "TableCell",
+                    "items": [
+                      {
+                        "type": "TextBlock",
+                        "text": "Type",
+                        "wrap": true,
+                        "weight": "Bolder"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "TableCell",
+                    "items": [
+                      {
+                        "type": "TextBlock",
+                        "text": "Type",
+                        "wrap": true,
+                        "weight": "Bolder"
+                      }
+                    ]
+                  }
+                ],
+                "style": "accent"
+              },
+              {
+                "type": "TableRow",
+                "cells": [
+                  {
+                    "type": "TableCell",
+                    "items": [
+                      {
+                        "type": "TextBlock",
+                        "text": "columns",
+                        "wrap": true
+                      }
+                    ]
+                  },
+                  {
+                    "type": "TableCell",
+                    "items": [
+                      {
+                        "type": "TextBlock",
+                        "text": "ColumnDefinition[]",
+                        "wrap": true
+                      }
+                    ]
+                  },
+                  {
+                    "type": "TableCell",
+                    "items": [
+                      {
+                        "type": "TextBlock",
+                        "text": "ColumnDefinition[]",
+                        "wrap": true
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "TableRow",
+                "cells": [
+                  {
+                    "type": "TableCell",
+                    "items": [
+                      {
+                        "type": "TextBlock",
+                        "text": "rows",
+                        "wrap": true
+                      }
+                    ]
+                  },
+                  {
+                    "type": "TableCell",
+                    "items": [
+                      {
+                        "type": "TextBlock",
+                        "text": "TableRow[]",
+                        "wrap": true
+                      }
+                    ]
+                  },
+                  {
+                    "type": "TableCell",
+                    "items": [
+                      {
+                        "type": "TextBlock",
+                        "text": "TableRow[]",
+                        "wrap": true
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+        "version": "1.5",
+        "msteams": {
+          "width": "full",
+          "entities": [
+            {
+              "type": "mention",
+              "text": "<at>Developer</at>",
+              "mentioned": {
+                "id": "some ID",
+                "name": "Developer"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
